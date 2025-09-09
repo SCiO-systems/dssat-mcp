@@ -1,0 +1,7 @@
+services:
+  mcp-crops:
+    image: sciohub/mcp-crops:${ENV}
+    container_name: mcp-crops
+    restart: unless-stopped
+    ports:
+      - 8000:8000
